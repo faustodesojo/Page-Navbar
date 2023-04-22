@@ -60,3 +60,8 @@ header {
     top: 0;
     z-index: 1;
 }
+footer p
+{
+  text-align: right;
+ color: rgba(165, 165, 165, 0.5);
+}
