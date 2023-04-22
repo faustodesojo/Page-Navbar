@@ -19,6 +19,7 @@ nav .padre
     list-style-type: none;
     margin-right: 50px;
     padding: 0 auto;
+    display: flex;
 }
 .hijo1, .hijo2, .hijo3
 {
@@ -53,4 +54,9 @@ main
     background-color: white;
     border: 1px rgb(221, 221, 221) solid;
     margin:0 auto;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
