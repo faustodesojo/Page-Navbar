@@ -1,7 +1,13 @@
+:root{
+    --primary: rgb(230, 195, 0);
+    --background: rgb(189, 189, 189);
+    --secondary: rgb(41, 41, 41);
+}
 body
 {
-    background-color: rgb(230, 230, 230);
+    background-color: var(--background);
 }
+/* Nav section */
 .navbar
 {
 width: 90%;
@@ -12,7 +18,8 @@ justify-content:space-between;
 background-color: white;
 align-items: center;
 margin: 0 auto;
-border: 1px solid rgb(220, 220, 220);
+border: 1px solid var(--background); 
+background-color: var(--secondary);
 }
 nav .padre
 {
@@ -21,31 +28,34 @@ nav .padre
     padding: 0 auto;
     display: flex;
 }
-.hijo1, .hijo2, .hijo3
+.hijo1, .hijo2, .hijo3,.hijo4, .hijo5, .hijo6
 {
     display: inline-block;
     margin: 10px;
 }
 .logo
 {
-    border-radius: 2em;
-    position: relative;
-    left: 75px;
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 40px;
+}
+.fondo-logo{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a:visited
 {
     color: rgb(82, 82, 82);
 }
+.padre a
+{
+    text-decoration: none;
+    color: rgb(175, 174, 174);
+}
 a:hover
 {
     color: rgb(252, 185, 1);
-}
-a
-{
-    text-decoration: none;
-    color: rgb(82, 82, 82);
 }
 main
 {
@@ -63,5 +73,5 @@ header {
 footer p
 {
   text-align: right;
- color: rgba(165, 165, 165, 0.5);
+ color: blue;
 }
