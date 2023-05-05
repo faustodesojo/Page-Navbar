@@ -18,7 +18,7 @@ justify-content:space-between;
 background-color: white;
 align-items: center;
 margin: 0 auto;
-border: 1px solid var(--background); 
+border: 1px solid var(--background);
 background-color: var(--secondary);
 }
 nav .padre
@@ -64,7 +64,6 @@ a:hover
 }
 main
 {
-    height: 1000px;
     width: 90%;
     background-color: white;
     border: 1px rgb(221, 221, 221) solid;
@@ -84,9 +83,9 @@ color: blue;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;   
+    margin-top: 100px;
 }
-.hero-info{  
+.hero-info{
     width: 500px;
     height: 300px;
     text-align:center;
@@ -106,7 +105,7 @@ color: blue;
     box-sizing:content-box;
     box-shadow: 11px 11px 5px 0px black;
     border-radius: 2em;
-    border: 2px solid black;   
+    border: 2px solid black;
 }
 .hero-info img{
     width: 45px;
@@ -120,9 +119,9 @@ position: relative;
 bottom: 20px;
 }
 .local:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
-.about{  
+.about{
     margin: 0 auto;
     margin-top: 100px;
     width: 60%;
@@ -137,7 +136,37 @@ bottom: 20px;
     font-size: 36px;
     font-weight: 800px;
 }
-.about p, ul{
-    font-size: 20px;
+.about p,.about ul{
+    font-size: 16px;
     text-align: left;
+}
+.cards{
+
+    align-items: center;
+    text-align: center;
+}
+.cards-text{
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.cards-assets{
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards-assets img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+}
+.concertina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
