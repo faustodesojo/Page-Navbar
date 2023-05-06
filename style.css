@@ -95,14 +95,14 @@ footer p {
 }
 
 .hero-info {
-    width: 500px;
+    width: 50%;
     height: 300px;
     text-align: center;
     color: var(--background);
     background-color: var(--secondary);
     border: 2px solid var(--primary);
     border-radius: 1em;
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
 }
 
 .hero-info h3 {
@@ -206,7 +206,6 @@ footer p {
 }
 
 .cards-assets {
-    /* width: 90%; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -218,8 +217,6 @@ footer p {
     height: 100px;
     display: flex;
     align-items: center;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
 }
 
 .concertina,
@@ -289,6 +286,7 @@ footer iframe{
 @media (max-width:1200px){
     .hero-info{
         height: 360px;
+        width: 100%;
     }
 }
 @media (max-width:992px){
@@ -303,6 +301,47 @@ iframe{
     display: none;
 }
 }
-@media (max-width:768px){
+@media (max-width: 768px){
+    *{
+        max-width: 100%;
+    }
+    body{
+    background-color: white;
+    border: none;
+}
+    main{
+        border: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .fondo-logo img{
+        width: 35px;
+        height: 35px;
+    }
+    .navbar{
+    font-size: 12px;
+    }
+    .navbar{
+        width: 100%;
+        border: none;
+    }    
+    .hero-info{
+        height: 300px;
+        padding: 0 auto;
+        margin-left: 10px;
+    }
+    .hero-info p{
+        margin: 15px;
+    }
+    footer{
+        background-color: var(--background);
+        font-size: 12px;
+    }
+    .footer-logo{
+        width: 55px;
+        height: 55px;
+    }
+}
+@media (max-width:576px){
 
 }
