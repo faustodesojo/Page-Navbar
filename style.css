@@ -8,34 +8,14 @@ body {
     background-color: var(--background);
 }
 /* Nav section */
-.navbar {
-    width: 90%;
-    height: 8vh;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    align-items: center;
-    margin: 0 auto;
-    border: 1px solid var(--background);
-    background-color: var(--secondary);
-}
-
-nav .padre {
+.navbar ul{
     list-style-type: none;
-    margin-right: 50px;
-    padding: 0 auto;
     display: flex;
+    gap: 50px;
+    margin-right: 50px;
 }
-
-.hijo1,
-.hijo2,
-.hijo3,
-.hijo4,
-.hijo5,
-.hijo6 {
-    display: inline-block;
-    margin: 10px;
+.navbar{
+    display: flex;
 }
 
 .logo {
@@ -77,9 +57,33 @@ main {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0,2);
+    text-align: center;
+    border: 1px solid var(--background);
+    background-color: var(--secondary)
+}
+
+.navbar i{
+    font-size: 36px;
+    display: none;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    }
+
+#toggle-menu{
+    display:none;
 }
 
 footer p {
@@ -95,7 +99,7 @@ footer p {
 }
 
 .hero-info {
-    width: 50%;
+    width: 35%;
     height: 300px;
     text-align: center;
     color: var(--background);
@@ -304,6 +308,7 @@ iframe{
 @media (max-width: 768px){
     *{
         max-width: 100%;
+        margin: 0 auto
     }
     body{
     background-color: white;
@@ -345,32 +350,95 @@ iframe{
     .navbar{
         font-size: 12px;
     }
+    header{
+        width: 100vh;
+    }
     .fondo-logo img{
-    width: 15px;
-    height: 15px;
+    width: 45px;
+    height: 45px;
     }
     .fondo-logo h2{
-        font-size: 12px;
+        font-size: 16px;
+        margin-left: 20px;
     }
     .hero-info{
-        height: 550px;
+        height: 100%;
     }
     .hero-info img{
-        width: 25px;
-        height: 25px;
-        margin-top: 20px;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 20px;
     }
     .cards-assets{
-        font-size: 9px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-assets div{
+        margin-bottom: 50px;
     }
     .cards-assets img{
-        width: 25px;
-        height: 25px;
-    }
-    .cards-assets{
-        flex-direction: column;
+        width: 95px;
+        height: 95px; 
     }
     .cards-assets h3{
         font-size: 16px;
     }
+    .concertina {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .concertina img:nth-child(1) {
+        order: 2;
+    }
+    .concertina img:nth-child(2) {
+        order: 1; 
+    }  
+    .concertina .concertina-background {
+        order: 3; 
+    }
+
+    .postes img:nth-child(1) {
+        order: 2;
+    }
+    .postes img:nth-child(2) {
+        order: 1; 
+    }  
+    .postes .postes-background {
+        order: 3; 
+    }
+
+    .tejido img:nth-child(1) {
+        order: 2;
+    }
+    .tejido img:nth-child(2) {
+        order: 1; 
+    }  
+    .tejido .tejido-background {
+        order: 3; 
+    }
+
+    .navbar ul{
+        background: white;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .navbar i{
+        display: block;
+    }
+    #toggle-menu:checked ~ .navbar-list{
+        display: flex;
+    }
+    .footer-logo{
+        width: 35px;
+        height: 35px;
+    } 
 }
