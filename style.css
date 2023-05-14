@@ -57,10 +57,12 @@ main {
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
     height: 80px;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -301,6 +303,16 @@ footer iframe{
 .hero-info{
     margin-bottom: 30px;
 }
+    .footer-logo{
+        width: 55px;
+        height: 55px;
+    }
+footer{
+    justify-content: center;
+}
+footer li{
+font-size: 12px;
+}
 iframe{
     display: none;
 }
@@ -323,16 +335,18 @@ iframe{
         width: 35px;
         height: 35px;
     }
-    .navbar{
+    .navbar a{
     font-size: 12px;
-    }
-    .navbar{
-        width: 100%;
-        border: none;
     }    
     .hero-info{
         height: 300px;
         padding: 0 auto;
+    }
+    header{
+        width: 100%;
+    }
+    header h2{
+        font-size: 16px;
     }
     .hero-info p{
         margin: 15px;
@@ -352,6 +366,7 @@ iframe{
     }
     header{
         width: 100vh;
+        position: fixed
     }
     .fondo-logo img{
     width: 45px;
@@ -422,7 +437,7 @@ iframe{
     .navbar ul{
         background: white;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 65px);
         position: absolute;
         top: 80px;
         left: 0;
@@ -431,14 +446,27 @@ iframe{
         justify-content: center;
         display: none;
     }
+    .navbar ul a{
+        font-size: 20px;
+    }
     .navbar i{
         display: block;
+        margin-right: 50px;
     }
     #toggle-menu:checked ~ .navbar-list{
         display: flex;
     }
+    footer{
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+    footer li{
+        text-align: center;
+    }
     .footer-logo{
-        width: 35px;
-        height: 35px;
+        width: 55px;
+        height: 55px;
     } 
+
 }
